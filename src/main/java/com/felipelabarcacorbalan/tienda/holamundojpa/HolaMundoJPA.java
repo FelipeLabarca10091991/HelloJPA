@@ -1,16 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
-
 package com.felipelabarcacorbalan.tienda.holamundojpa;
 
-/**
- *
- * @author NB-FLABARCA
- */
+import com.felipelabarcacorbalan.tienda.holamundojpa.util.EntityManagerUtil;
+import javax.persistence.EntityManager;
+
+
+
 public class HolaMundoJPA {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        EntityManager manager = EntityManagerUtil.getEntityManager();
+        System.out.println("EntityManager class ==>" + manager.getClass().getCanonicalName());
     }
 }
